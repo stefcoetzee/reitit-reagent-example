@@ -13,7 +13,7 @@
    [:h1 "Homepage"]
    [:button
     {:type "button"
-     :on-click (fn [] (rfe/push-state ::item {:id 3}))}
+     :on-click (fn [] (rfe/push-state ::item {:id 3} {:foo "bar"}))}
     "Push state (push entry onto history stack): item = 3"]
    [:button
     {:type "button"
