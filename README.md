@@ -1,7 +1,8 @@
 # Reitit frontend Reagent example
 
 Implementation of the [Reitit](https://github.com/metosin/reitit)
-[Reagent](https://github.com/reagent-project/reagent) frontend example,
+[Reagent](https://github.com/reagent-project/reagent)
+[frontend example](https://github.com/metosin/reitit/blob/master/examples/frontend/src/frontend/core.cljs),
 using [Shadow CLJS](https://github.com/thheller/shadow-cljs).
 
 Install:
