@@ -1,0 +1,17 @@
+{:source-paths       ["src"]
+
+ :dependencies [[org.clojure/clojurescript "1.11.60"] ;; Ignored by Shadow CLJS, why?
+                [binaryage/devtools "1.0.7"]
+                [reagent "1.2.0"]
+                [metosin/reitit "0.6.0"]
+                [fipp "0.6.26"]]
+
+ :nrepl        {:port 3333}
+
+ :builds       {:app {:target     :browser
+                      :output-dir "resources/public/assets/js"
+                      :asset-path "assets/js"
+                      :modules    {:main ; Becomes resources/public/assets/js/main.js
+                                   {:init-fn app.main/init}}
+                      :devtools   {:http-root "resources/public"
+                                   :http-port  5000}}}}
